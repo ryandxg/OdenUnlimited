@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.con3{
+    width:1000px;
+    margin:auto;
+    height: 800px;
+    background-color:#fff;
+}
+.faq{
+    text-align: center;
+    background-color: #722f37;
+    width:500px;
+    margin:auto;
+    padding:10px;
+    border-radius: 30px;
+    font-size: 30px;
+    float: left;
+    color: white;
+}
+.nav1{
+    width:100%;
+    text-align:center;
+    background-color: #722f37;
+    padding:20px;
+   
+}
+
+.nav1 ul a{
+    color:white;
+    margin:20px;
+    font-size:25px;
+    text-decoration: none;
+    font-family: cursive;
+}
+.nav1 ul a:hover{
+    background-color: green;
+    color:white;
+}
