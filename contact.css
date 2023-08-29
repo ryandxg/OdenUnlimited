@@ -9,6 +9,34 @@ body{
     background-color:#F2E9E4 ;
 }
 
+
+header{
+	display: flex;
+    background-color: #AF1B3F;
+    width: 100%;
+    height: 80px;
+	padding: 0 10vw;
+	align-items: center;
+	justify-content: space-between;
+}
+.head{
+	display: flex;
+    width: 40px;
+    height: 40px;
+}
+.nav ul{
+	display: flex;
+	gap: 2vw;
+}
+.nav ul a{
+    color: #fffdd0;
+    /* color: #722f37; */
+    /* margin: 20px; */
+    font-size: 20px;
+	text-decoration: none;
+}
+
+
 .container{
     padding: 2rem;
 }

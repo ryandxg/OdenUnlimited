@@ -1,37 +1,40 @@
 *{
+	margin: 0;
+	padding: 0;
     box-sizing: border-box;
 }
 
 body{
     width:100%;
-    margin:0;
     background-color: #eee;
-    height:700px;
+
 }
-.header{
+header{
+	display: flex;
     width: 100%;
+	background-color: #AF1B3F;
     height: 80px;
+	padding: 0 10vw;
+	align-items: center;
+	justify-content: space-between;
 }
-.header.head{
-    width: 100px;
-    height: 10px;
-}
-.nav{
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    background-color: green;
-    height: 50px;
+.head{
+	display: flex;
+    width: 40px;
+    height: 40px;
 }
 .nav ul{
-    margin-top: 0px;
-    margin-bottom: 0px;
+	display: flex;
+	gap: 2vw;
 }
 .nav ul a{
-    color: #722f37;
-    margin: 20px;
+    color: #fffdd0;
+    /* margin: 20px; */
     font-size: 20px;
+	text-decoration: none;
 }
+
+
 .slider{
     width: 100%;
     height: 500px;
