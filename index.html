@@ -16,7 +16,7 @@
     <!-- jquery plugin -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    
     <title>OdenUnlimited</title>
 </head>
 
@@ -24,24 +24,22 @@
 
 <body>
     <header>
-        <div  class="content flex_space">
             <div class="logo">
                 logo here
             </div>
-        <div class="navlinks">
+
+            <div class="navlinks">
                 <ul id="menulist">
-                    <li><a href="#home">Home</a> </li>
-                    <li><a href="#about">Lounge</a> </li>
-                    <li><a href="#rooms">Rooms</a> </li>
-                    <li><a href="#pages">GALLERY</a> </li>
+                    <li><a href="/">Home</a> </li>
+                    <li><a href="#">Lounge</a> </li>
+                    <li><a href="#">Rooms</a> </li>
+                    <li><a href="#">GALLERY</a> </li>
                     <li><a href="aboutUs.html">aboutUs</a> </li>
-                    <li><a href="contact.html">contact</a> </li>
-                    <li> <i class="fa fa-search"></i> </li>       
+                    <li><a href="contact.html">contact</a> </li>      
                     <li> <button class="primary-btn">BOOK NOW</button> </li>
                   </ul>
                   <span class="fa fa-bars"></span>    
-        </div>
-        </div>
+            </div>
     </header>
 
     
@@ -53,8 +51,7 @@
               <img src="img/banner-1.png" alt="">
               <div class="text">
                 <h1>Enjoy Your Time Here</h1>
-                <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
-                </p>
+                <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
                 <div class="flex">
                   <button class="primary-btn">READ MORE</button>
                   <button class="secondary-btn">CONTACT US</button>
@@ -89,46 +86,19 @@
         </div>
       </section>
 
-       <!-- script for corusel slider i used OwlCarousel -->
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
-       referrerpolicy="no-referrer"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-       <!-- script for corusel slider i used OwlCarousel -->
-        <script>
-            $('.owl-carousel').owlCarousel({
-              loop: true,
-              margin: 0,
-              nav: true,
-              dots: false,
-              navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
-              responsive: {
-                0: {
-                  items: 1
-                },
-                768: {
-                  items: 1
-                },
-                1000: {
-                  items: 1
-                }
-              }
-            })
-          </script>
+
         
     
         <section class="book">
-            <div class="container flex_space">
+            <div class="bookings">
               <div class="text">
                 <h1> <span>Book </span> Your Rooms </h1>
               </div>
               <div class="form">
                 <form class="grid">
-                  <input type="date" placeholder="Araival Date">
+                  <input type="date" placeholder="Arrival Date">
                   <input type="date" placeholder="Departure Date">
                   <input type="number" placeholder="Adults">
                   <input type="number" placeholder="Childern">
@@ -139,6 +109,14 @@
           </section>
         
 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

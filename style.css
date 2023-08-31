@@ -25,11 +25,6 @@
 	display: flex;
   }
   
-  .flex_space {
-	display: flex;
-	justify-content: space-between;
-  }
-  
   button {
 	border: none;
 	background: none;
@@ -40,8 +35,12 @@
   
   .primary-btn {
 	padding: 15px 40px;
-	background: #37371f;
+	background: #90323d;
+	color: white;
 	font-weight: bold;
+  }
+  .primary-btn:hover{
+	background: #37371f;
 	color: white;
   }
   
@@ -52,18 +51,29 @@
 	font-weight: bold;
 	color: white;
   }
-  
-  .container {
-	max-width: 85%;
-	margin: auto;
+  .secondary-btn:hover{
+	background: black;
+	
   }
   
+  .bookings {
+	display: flex;
+	flex-direction: column;
+	gap: 3vh;
+	padding: 0 10vw;
+	width: 100%;
+  }
+
+
   /*--------header---------*/
   header {
-	height: 10vh;
-	line-height: 10vh;
-	padding: 0 20px;
-	background-color: #90323d;
+	display: flex;
+    background-color: #90323d;
+    width: 100%;
+    height: 80px;
+	padding: 0 10vw;
+	align-items: center;
+	justify-content: space-between;
   }
   
   header img {
@@ -71,7 +81,11 @@
   }
   
   header ul {
-	display: inline-block;
+	display: flex;
+	gap: 2vw;
+	height: 40px;
+	align-items: center;
+
   }
   
   header ul li {
@@ -80,7 +94,7 @@
   }
   
   header ul li a {
-	color: #000;
+	color: #fff;
 	margin: 0 10px;
 	transition: 0.5s;
   }
@@ -178,7 +192,7 @@
   }
   
   .book h1 {
-	font-size: 28px;
+	font-size: 36px;
   }
   
   .book h1 span {
