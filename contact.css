@@ -12,13 +12,14 @@ body{
 
 header{
 	display: flex;
-    background-color: #AF1B3F;
+    background-color: #90323d;
     width: 100%;
     height: 80px;
 	padding: 0 10vw;
 	align-items: center;
 	justify-content: space-between;
 }
+
 .head{
 	display: flex;
     width: 40px;

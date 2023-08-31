@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">      <!-- stylesheet for page -->
+
+    <!-- owlCarousel stylelink got it online -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" 
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
+  integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery plugin -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <title>OdenUnlimited</title>
 </head>
@@ -13,48 +24,121 @@
 
 <body>
     <header>
-        <div  class="head"><img src="">logo here</div>       <!-- resize the div before putting the logo -->
-
-        <div class="nav">
-            <ul>
-                <a class="header-home" style="text-decoration: underline;" href="">HOME</a>
-                <a href="">LOUNGE</a>
-                <a href="">GALLERY</a>
-                <a href="aboutUs.html">ABOUT US</a>
-                <a href="contact.html">CONTACT</a> 
-                <a href="">BOOK NOW</a>
-            </ul>
+        <div  class="content flex_space">
+            <div class="logo">
+                logo here
+            </div>
+        <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#about">Lounge</a> </li>
+                    <li><a href="#rooms">Rooms</a> </li>
+                    <li><a href="#pages">GALLERY</a> </li>
+                    <li><a href="aboutUs.html">aboutUs</a> </li>
+                    <li><a href="contact.html">contact</a> </li>
+                    <li> <i class="fa fa-search"></i> </li>       
+                    <li> <button class="primary-btn">BOOK NOW</button> </li>
+                  </ul>
+                  <span class="fa fa-bars"></span>    
         </div>
-
+        </div>
     </header>
 
     
 
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img class="hori" src="img/alexander-kaunas-xEaAoizNFV8-unsplash.jpg" id="slide-1">
-
-                <img class="hori" src="img/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg" id="slide-2">
-
-                <img class="hori" src="img/surface-pmYzYkB2JcI-unsplash.jpg" id="slide-3">
-
+    <section class="home">
+        <div class="content">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="img/banner-1.png" alt="">
+              <div class="text">
+                <h1>Enjoy Your Time Here</h1>
+                <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+                </p>
+                <div class="flex">
+                  <button class="primary-btn">READ MORE</button>
+                  <button class="secondary-btn">CONTACT US</button>
+                </div>
+              </div>
             </div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
+            <div class="item">
+              <img src="img/banner-2.png" alt="">
+              <div class="text">
+                <h1>Enjoy Your Time Here</h1>
+                <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+                </p>
+                <div class="flex">
+                  <button class="primary-btn">READ MORE</button>
+                  <button class="secondary-btn">CONTACT US</button>
+                </div>
+              </div>
             </div>
+            <div class="item">
+              <img src="img/banner-3.png" alt="">
+              <div class="text">
+                <h1>Enjoy Your Time Here</h1>
+                <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+                </p>
+                <div class="flex">
+                  <button class="primary-btn">READ MORE</button>
+                  <button class="secondary-btn">CONTACT US</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
+       <!-- script for corusel slider i used OwlCarousel -->
 
-    <div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+       referrerpolicy="no-referrer"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+       <!-- script for corusel slider i used OwlCarousel -->
+        <script>
+            $('.owl-carousel').owlCarousel({
+              loop: true,
+              margin: 0,
+              nav: true,
+              dots: false,
+              navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+              responsive: {
+                0: {
+                  items: 1
+                },
+                768: {
+                  items: 1
+                },
+                1000: {
+                  items: 1
+                }
+              }
+            })
+          </script>
         
-    </div>
     
+        <section class="book">
+            <div class="container flex_space">
+              <div class="text">
+                <h1> <span>Book </span> Your Rooms </h1>
+              </div>
+              <div class="form">
+                <form class="grid">
+                  <input type="date" placeholder="Araival Date">
+                  <input type="date" placeholder="Departure Date">
+                  <input type="number" placeholder="Adults">
+                  <input type="number" placeholder="Childern">
+                  <input type="submit" value="CHECK AVAILABILITY">
+                </form>
+              </div>
+            </div>
+          </section>
+        
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
 </body>
 </html>
