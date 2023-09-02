@@ -6,6 +6,8 @@
   
   body {
 	font-family: 'Poppins', sans-serif;
+	background: #90323d;
+	color: white;
   }
   
   h1, h2 {
@@ -38,6 +40,7 @@
 	background: #90323d;
 	color: white;
 	font-weight: bold;
+	border: 2px solid white;
   }
   .primary-btn:hover{
 	background: #37371f;
@@ -196,7 +199,9 @@
   }
   
   .book h1 span {
-	color: #37371f;
+	color: #fccb06;
+	font-size: 44px;
+	font-weight: 800;
   }
   
   .book input {
@@ -209,3 +214,46 @@
   }
   
  
+
+  /* main{
+	display: flex;
+	flex-direction: column;
+	gap: 10vh;
+	width: 100%;
+	padding: 5vh 10vw;
+  } */
+  
+  .typeOfRooms{
+	padding: 5vh 10vw;
+	width: 100%;
+	justify-content: space-between;
+  }
+  .textsForRooms{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 3vh;
+	color: #fff;
+	line-height: 1.5rem;
+  }
+  .typeOfRooms-btn{
+	padding: 15px 40px;
+	background: #37371f;
+	color: white;
+	font-weight: bold;
+  }
+  .typeOfRooms-btn:hover{
+	border: 2px solid #fccb06;
+  }
+
+
+
+
+
+  footer{
+	background: #37371f;
+	
+	width: 100%;
+	
+	padding: 10vh 10vw;
+  }
