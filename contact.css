@@ -1,122 +1,158 @@
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark-blue: white;
 }
 
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:#F2E9E4 ;
-}
-
-
-header{
-	display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #90323d;
-    width: 100%;
-    height: 80px;
-	padding: 0 10vw;
-	align-items: center;
-	justify-content: space-between;
 }
-
-.head{
-	display: flex;
-    width: 40px;
-    height: 40px;
-}
-.nav ul{
-	display: flex;
-	gap: 2vw;
-}
-.nav ul a{
-    color: #fffdd0;
-    /* color: #722f37; */
-    /* margin: 20px; */
-    font-size: 20px;
-	text-decoration: none;
-}
-
 
 .container{
-    padding: 2rem;
-}
-
-h1, h2{
-    color:#9A8C98 ;
-    font-weight: 300;
-}
-
-h1{
-    border-bottom: 2px solid #4A4E69;
-    width: fit-content;
-    padding: 0 10px;
-    margin-bottom: 2rem;
-}
-
-p{
-    color: #22223B;
-    margin: 10px 0;
-    letter-spacing: 1px;
-}
-
-.info{
-    display: grid;
-    grid-template-columns:  repeat(3, 1fr);
+    height: 100vh;
     width: 100%;
-    margin: 2rem 0;
+    background-color: #90323d;
 }
 
-.direction,
-.contact{
+.top{
+    height: 35vh;
+    background-color: #37371f;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top: 3rem;
 }
 
-.hours{
-    padding: 1rem;
+.top h6{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #457b9d;
 }
 
-.schedule{
+.top h1{
+    letter-spacing: 2px;
+    margin: 1rem;
+    color: var(--dark-blue);
+}
+
+.top p{
+    color: #333;
+    max-width: 400px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--dark-blue);
+}
+
+
+
+.main-area{
+    height: 65vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main-area .form-area{
+    width: 400px;
+    margin: 0 auto;
+    transform: translateY(-50px);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    background-color: #90323d;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
 }
 
-.form{
-    display:flex;
-}
-
-.contact-form{
-    padding: 0 1rem;
-    width: 50%;
+/* form area */
+.form-input{
     display: flex;
     flex-direction: column;
 }
 
-.contact-form .input-form{
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
+.form-input label{
+    text-transform: uppercase;
     font-size: 12px;
-    outline: none;
+    margin: 10px 0;
 }
 
-.contact-form textarea{
-    height: 50%;
+.form-input .asterisk{
+    color: tomato;
+    font-size: 10px;
+}
+
+.form-input input{
+    border: solid 1px #ddd;
+    padding: 10px;
+}
+
+.form-input textarea{
+    width: 100%;
+    height: 100px;
+    border: solid 1px #ddd;
+    resize: none;
+}
+
+form button{
+    margin: 1rem 0;
     border: none;
-    font-size: 16px;
-    outline: none;
+    background-color: #37371f;
+    width: 100%;
     padding: 10px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    outline: none;
 }
 
-.contact-form button{
-    color: #F2E9E4;
-    background-color:#9A8C98;
-    padding: 10px;
-    width: fit-content;
-    outline: none;
-    cursor: pointer;
-    margin-top: 1rem;
+/* info area */
+
+.info-area h3{
+    font-weight: 300;
     font-size: 16px;
+    color: var(--dark-blue);
+    border-bottom: 1px solid var(--dark-blue);
+    width: fit-content;
+}
+
+.info-area p{
+    margin: 10px 0;
+    color: var(--dark-blue)
+}
+
+/* help area */
+.help-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #90323d;
+}
+
+.help-area h3,
+.help-area p{
+    color: var(--dark-blue);
+    margin: 10px 0;
+}
+
+.help-area .help-topic{
+    padding: 10px 0;
+    margin: 10px 0;
+    border-bottom: solid 1px #457b9d;
+    position: relative;
+    cursor: pointer;
+}
+
+.help-topic .right{
+    position: absolute;
+    top:50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
