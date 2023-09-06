@@ -11,7 +11,79 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #90323d;
+    color: white;
 }
+
+/*--------header---------*/
+  header {
+	display: flex;
+    background-color: #90323d;
+    width: 100%;
+    height: 80px;
+	padding: 0 10vw;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  header img {
+	margin: 20px 0;
+  }
+  
+  header ul {
+	display: flex;
+	gap: 2vw;
+	height: 40px;
+	align-items: center;
+
+  }
+  
+  header ul li {
+	display: inline-block;
+	text-transform: uppercase;
+  }
+  
+  header ul li a {
+	color: #fff;
+	margin: 0 10px;
+	transition: 0.5s;
+  }
+  
+  header ul li a:hover {
+	color: #7fc142;
+  }
+  
+  header i {
+	margin: 0 20px;
+  }
+  
+  header button {
+	padding: 13px 40px;
+  }
+  
+  header .navlinks span {
+	display: none;
+  }
+  .primary-btn {
+	padding: 15px 40px;
+	background: #90323d;
+	color: white;
+	font-weight: bold;
+	border: 2px solid white;
+    cursor: pointer;
+  }
+  .primary-btn:hover{
+	background: #37371f;
+	color: white;
+  }
+  a {
+	text-decoration: none;
+  }  
+  li {
+	list-style: none;
+  }
+
+
+  /*--------Body---------*/
 
 .container{
     height: 100vh;
@@ -30,12 +102,12 @@ body{
     padding-top: 3rem;
 }
 
-.top h6{
+/* .top h6{
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #457b9d;
-}
+} */
 
 .top h1{
     letter-spacing: 2px;
@@ -136,7 +208,7 @@ form button{
     background-color: #90323d;
 }
 
-.help-area h3,
+.help-area h2,
 .help-area p{
     color: var(--dark-blue);
     margin: 10px 0;
@@ -145,7 +217,7 @@ form button{
 .help-area .help-topic{
     padding: 10px 0;
     margin: 10px 0;
-    border-bottom: solid 1px #457b9d;
+    border-bottom: solid 1px #fccb06;
     position: relative;
     cursor: pointer;
 }

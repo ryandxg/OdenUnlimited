@@ -4,15 +4,14 @@
     padding: 0;
     
 }
-
-main{
-    width: 100%;
-    height: 100vh;
-    padding: 0 10vw;
-    padding-top: 4vh;
-    /* background-color: ;  incase you wanna add colors to the body*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
 }
-header{
+
+/*--------header---------*/
+header {
 	display: flex;
     background-color: #90323d;
     width: 100%;
@@ -20,72 +19,85 @@ header{
 	padding: 0 10vw;
 	align-items: center;
 	justify-content: space-between;
-}
-.head{
-	display: flex;
-    width: 40px;
-    height: 40px;
-}
-.nav ul{
+  }
+  
+  header img {
+	margin: 20px 0;
+  }
+  
+  header ul {
 	display: flex;
 	gap: 2vw;
-}
-.nav ul a{
-    color: #fffdd0;
-    /* color: #722f37; */
-    /* margin: 20px; */
-    font-size: 20px;
+	height: 40px;
+	align-items: center;
+
+  }
+  
+  header ul li {
+	display: inline-block;
+	text-transform: uppercase;
+  }
+  
+  header ul li a {
+	color: #fff;
+	margin: 0 10px;
+	transition: 0.5s;
+  }
+  
+  header ul li a:hover {
+	color: #7fc142;
+  }
+  
+  header i {
+	margin: 0 20px;
+  }
+  
+  header button {
+	padding: 13px 40px;
+  }
+  
+  header .navlinks span {
+	display: none;
+  }
+  .primary-btn {
+	padding: 15px 40px;
+	background: #90323d;
+	color: white;
+	font-weight: bold;
+	border: 2px solid white;
+    cursor: pointer;
+  }
+  .primary-btn:hover{
+	background: #37371f;
+	color: white;
+  }
+  a {
 	text-decoration: none;
-}
+  }  
+  li {
+	list-style: none;
+  }
 
+  /*--------Body---------*/
 
-section{
-    padding-top: 3vh;
-}
-.texts{
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-}
-section > div {
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
-}
-/* .con3{
-    width:100%;
-    background-color:#fff;
-} */
+    main{
+        width: 100%;
+        height: 100vh;
+        padding: 0 10vw;
+        padding-top: 4vh;
+        /* background-color: ;  incase you wanna add colors to the body*/
+    }
 
-/* // all these on FAQ is not needed. use the header i created on the home page//  */
-
-/* .faq{
-    text-align: center;
-    background-color: #722f37;
-    width:500px;
-    margin:auto;
-    padding:10px;
-    border-radius: 30px;
-    font-size: 30px;
-    float: left;
-    color: white;
-} */
-/* .nav1{
-    width:100%;
-    text-align:center;
-    background-color: #722f37;
-    padding:20px;
-   
-}
-
-.nav1 ul a{
-    color:white;
-    margin:20px;
-    font-size:25px;
-    text-decoration: none;
-    font-family: cursive;
-}
-.nav1 ul a:hover{
-    text-decoration: underline;
-    color:white;
-} */
+    section{
+        padding-top: 3vh;
+    }
+    .texts{
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    section > div {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+    }
