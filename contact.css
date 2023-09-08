@@ -10,8 +10,8 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #90323d;
-    color: white;
+    background-color: hsl(0, 0%, 98%);
+    color: black;
 }
 
 /*--------header---------*/
@@ -84,8 +84,26 @@ body{
 
 
   /*--------Body---------*/
+  main{
+    padding: 0 10vw;
+  }
+  .contactDetails{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  /* form{
+    display: flex;
+  } */
+  .form-input{
+    display: flex;
+    flex-direction: column;
+  }
 
-.container{
+
+
+
+/* .container{
     height: 100vh;
     width: 100%;
     background-color: #90323d;
@@ -101,14 +119,6 @@ body{
     align-items: center;
     padding-top: 3rem;
 }
-
-
-/* .top h6{
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #457b9d;
-} */
 
 .top h1{
     letter-spacing: 2px;
@@ -143,10 +153,10 @@ body{
     padding: 2rem 1rem;
     background-color: #90323d;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
-}
+} */
 
 /* form area */
-.form-input{
+/* .form-input{
     display: flex;
     flex-direction: column;
 }
@@ -184,11 +194,11 @@ form button{
     color: white;
     cursor: pointer;
     outline: none;
-}
+} */
 
 /* info area */
 
-.info-area h3{
+/* .info-area h3{
     font-weight: 300;
     font-size: 16px;
     color: var(--dark-blue);
@@ -199,10 +209,10 @@ form button{
 .info-area p{
     margin: 10px 0;
     color: var(--dark-blue)
-}
+} */
 
 /* help area */
-.help-area{
+/* .help-area{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,4 +238,4 @@ form button{
     top:50%;
     right: 20px;
     transform: translateY(-50%);
-}
+} */

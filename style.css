@@ -6,8 +6,8 @@
   
   body {
 	font-family: 'Poppins', sans-serif;
-	background: #90323d;
-	color: white;
+	background: hsl(0, 0%, 98%);
+	color: black;
   }
   
   h1, h2 {
@@ -186,7 +186,8 @@
   .book {
 	padding: 40px 0;
 	background: #90323d;
-	color: #fff;
+	border-bottom: 1px solid hsl(235, 19%, 35%);
+	/* color: #fff; */
 	text-decoration: solid;
   }
   
@@ -227,13 +228,14 @@
 	padding: 5vh 10vw;
 	width: 100%;
 	justify-content: space-between;
+	border-bottom: 1px solid hsl(235, 19%, 35%);
   }
   .textsForRooms{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 3vh;
-	color: #fff;
+	/* color: #fff; */
 	line-height: 1.5rem;
   }
   .typeOfRooms-btn{
@@ -243,7 +245,8 @@
 	font-weight: bold;
   }
   .typeOfRooms-btn:hover{
-	border: 2px solid #fccb06;
+	background: #90323d;
+	border: 1px solid #fccb06;
   }
 
 

@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: white;
+    background-color: hsl(0, 0%, 98%);
     color: black;
 }
 
@@ -100,4 +100,12 @@ header {
         display: flex;
         flex-direction: column;
         gap: 4vh;
+    }
+    .each-text-design{
+      background: #90323d;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .each-text-design > h2{
+      color: #7fc142;
     }
