@@ -44,6 +44,7 @@
   }
   .primary-btn:hover{
 	background: #37371f;
+	border: 2px solid #fccb06;
 	color: white;
   }
   
