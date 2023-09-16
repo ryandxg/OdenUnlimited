@@ -251,13 +251,48 @@
   }
 
 
-
-
-
-  footer{
-	background: #37371f;
-	
+	/*--------footer---------*/
+footer {
 	width: 100%;
-	
-	padding: 10vh 10vw;
+	background: #37371f;
+	color: #b6b7b9;
+	padding: 10px 0 5px 0;
+  }
+  
+  footer .grid {
+	grid-template-columns: 6fr 3fr 3fr;
+  }
+  
+  footer p {
+	color: #b6b7b9;
+	font-size: 15px;
+	line-height: 25px;
+  }
+  
+ 
+  
+  footer h2 {
+	color: #fff;
+	margin-bottom: 10px;
+  }
+  
+  footer li {
+	margin-bottom: 20px;
+  }
+  
+  footer i {
+	color: #7fc142;
+	margin: 20px 0;
+	margin-right: 20px;
+  }
+  
+  footer label {
+	margin: 20px 0;
+  }
+  
+  .legal {
+	padding: 15px 0;
+	background: #282834;
+	color: #b6b7b9;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
