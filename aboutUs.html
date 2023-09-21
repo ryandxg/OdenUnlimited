@@ -5,26 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AboutUs</title>
     <link rel="stylesheet" href="aboutUs.css">
+
+    <!-- fontawesome plugin -->
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+    <!-- jquery plugin -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
   
 
 
 
     <header>
-        <div class="logo">
+        <div class="header-nav-mobile">
+          <div class="logo">
             logo here
+          </div>
+
+          <i id="open-menu"  class="fa-solid fa-bars" style="font-size:30px;cursor:pointer"></i>
+        
         </div>
 
-        <div class="navlinks">
-            <ul id="menulist">
+
+        <div id="mySidenav" class="sidenav ">  <!--class="navlinks" id="menuItems" -->
+          <i id="close-menu" class="fa-solid fa-xmark" style="font-size:30px;cursor:pointer;color: white;"></i>
+            <ul class="menu-drop-div" id="menulist">
                 <li><a href="/">Home</a> </li>
                 <li><a href="#">Lounge</a> </li>
-                <li><a style="color: #7fc142;"  href="aboutUs.html">About Us</a> </li>
-                <li><a href="contact.html">Contact Us</a> </li>      
-                <li> <button class="primary-btn">BOOK NOW</button> </li>
-              </ul>
-              <span class="fa fa-bars"></span>    
+                <li><a  style="color: #7fc142;" href="aboutUs.html">about Us</a> </li>
+                <li><a href="contact.html">contact us</a> </li>      
+                <li><button class="primary-btn">BOOK NOW</button></li>
+            </ul>
         </div>
     </header>
 
@@ -39,7 +51,7 @@
          <!-- <br>  not really neccesary-->
 
          <section>
-            <div class="" style="width: 45%; float: left;">   
+            <div class="bodyDiv-left">   
                 <div class="texts each-text-design">
                     <h2>What's the deal with this store?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique recusandae exercitationem
@@ -68,10 +80,7 @@
              </div>
     
     
-             <div style="width: 45%; float: right;">
-    
-                 <!-- <br>   is this a mistake? why multiple br. if its not a mistake then bring it back
-                <br> -->
+             <div class="bodyDiv-right">
                  
                 <div class="texts texts each-text-design">
                     <h2>Size and specifications.</h2>
@@ -100,7 +109,36 @@
         
 
        
-       
+     <footer>
+        <div class="grid">
+          <div class="box">
+            <img src=" " alt="Put logo here">
+          </div>
+    
+          <div class="box">
+            <ul>
+              <li><a href="aboutUs.html" style="color: #7fc142;;">Home</a> </li>
+              <li><a href="aboutUs.html">About Us</a> </li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#lounge">Lounge</a></li>
+              <li><a href="#privacypolicy">Privacy Policy</a></li>
+            </ul>
+          </div>
+    
+          <div class="box">
+            <h2>Contact Us</h2>
+            
+            <i class="fa fa-location-dot"></i>
+            <label>12, High Street, Crewe. CW27BN </label> <br>
+            <i class="fa fa-phone"></i>
+            <label> +44 7949 686 248,  +44 7904 999 682.</label> <br>
+            <i class="fa fa-envelope"></i>
+            <label>info@OdenUnlimited.co.uk</label> <br>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="script.js"></script>
 
       
 </body>

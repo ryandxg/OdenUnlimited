@@ -6,9 +6,40 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
+    <!-- fontawesome plugin -->
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+    <!-- jquery plugin -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
     <title>Contact Form Page</title>
 </head>
-<body>
+<body id="body">
+
+    <header>
+        <div class="header-nav-mobile">
+          <div class="logo">
+            logo here
+          </div>
+
+          <i id="open-menu"  class="fa-solid fa-bars" style="font-size:30px;cursor:pointer"></i>
+        
+        </div>
+
+
+        <div id="mySidenav" class="sidenav ">  <!--class="navlinks" id="menuItems" -->
+          <i id="close-menu" class="fa-solid fa-xmark" style="font-size:30px;cursor:pointer;color: white;"></i>
+            <ul class="menu-drop-div" id="menulist">
+                <li><a href="/">Home</a> </li>
+                <li><a href="#">Lounge</a> </li>
+                <li><a href="aboutUs.html">about Us</a> </li>
+                <li><a style="color: #7fc142;" href="contact.html">contact us</a> </li>      
+                <li><button class="primary-btn">BOOK NOW</button></li>
+            </ul>
+        </div>
+    </header>
+
+
 
     <div class="container">
         <div class="top">
@@ -62,5 +93,7 @@
 
             </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
