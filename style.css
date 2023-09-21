@@ -296,3 +296,22 @@ footer {
 	color: #b6b7b9;
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
+
+  #open-menu{
+	display: none;
+  }
+  #close-menu{
+	display: none;
+  }
+
+@media (max-width: 35rem){
+	.navlinks{
+		display: none;
+	}
+	#open-menu{
+		display: block;
+	  }
+	  #close-menu{
+		display: none;
+	  }
+}
