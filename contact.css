@@ -138,13 +138,6 @@ a {
   padding-top: 3rem;
 }
 
-.top h6{
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #457b9d;
-}
-
 .top h1{
   letter-spacing: 2px;
   margin: 1rem;
@@ -162,16 +155,17 @@ a {
 
 
 .main-area{
-  height: 65vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* height: 65vh; */
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr);
   max-width: 1000px;
-  margin: auto;
+  margin: auto; */
 }
 
 .main-area .form-area{
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
+  margin-top: 3vw;
   transform: translateY(-50px);
   display: flex;
   flex-direction: column;
@@ -326,4 +320,9 @@ form button{
 		margin-left: 2.3rem;
 	  }
 
+
+    .main-area .form-area{
+      width: 400px;
+      margin-top: 1vw;
+    }
 }
