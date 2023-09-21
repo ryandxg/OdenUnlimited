@@ -173,6 +173,14 @@
   
   /*--------home---------*/
 /*--------book---------*/
+.book {
+	padding: 40px 0;
+	background: #90323d;
+	border-bottom: 1px solid hsl(235, 19%, 35%);
+	/* color: #fff; */
+	text-decoration: solid;
+  }
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -183,14 +191,6 @@
 	outline: none;
 	border: none;
 	width: 100%;
-  }
-  
-  .book {
-	padding: 40px 0;
-	background: #90323d;
-	border-bottom: 1px solid hsl(235, 19%, 35%);
-	/* color: #fff; */
-	text-decoration: solid;
   }
   
   h1 {
@@ -216,29 +216,28 @@
 	color: #fff;
   }
   
- 
 
-  /* main{
-	display: flex;
-	flex-direction: column;
-	gap: 10vh;
-	width: 100%;
-	padding: 5vh 10vw;
-  } */
   
   .typeOfRooms{
+	display: flex;
 	padding: 5vh 10vw;
 	width: 100%;
+	gap: 5rem;
 	justify-content: space-between;
 	border-bottom: 1px solid hsl(235, 19%, 35%);
   }
   .textsForRooms{
 	display: flex;
+	width: 45%;
 	flex-direction: column;
 	justify-content: center;
 	gap: 3vh;
 	/* color: #fff; */
 	line-height: 1.5rem;
+  }
+  .typeOfRooms-img{
+	width: 45%;
+	object-fit: cover;
   }
   .typeOfRooms-btn{
 	padding: 15px 40px;
@@ -253,15 +252,24 @@
 
 
 	/*--------footer---------*/
-footer {
+  footer {
 	width: 100%;
 	background: #37371f;
 	color: #b6b7b9;
-	padding: 10px 0 5px 0;
+	padding: 5vw 10vw;
   }
   
   footer .grid {
-	grid-template-columns: 6fr 3fr 3fr;
+	grid-template-columns: 4fr 4fr 4fr;
+  }
+
+  footer ul li a {
+	color: #fff;
+	margin: 0 10px;
+  }
+
+  footer ul li a:hover {
+	color: #7fc142;
   }
   
   footer p {
@@ -269,8 +277,6 @@ footer {
 	font-size: 15px;
 	line-height: 25px;
   }
-  
- 
   
   footer h2 {
 	color: #fff;
@@ -290,13 +296,7 @@ footer {
   footer label {
 	margin: 20px 0;
   }
-  
-  .legal {
-	padding: 15px 0;
-	background: #282834;
-	color: #b6b7b9;
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
-  }
+
 
   #open-menu{
 	display: none;
@@ -304,8 +304,6 @@ footer {
   #close-menu{
 	display: none;
   }
-
-
  .scroll{
 	overflow-y: hidden;
  }
@@ -387,5 +385,49 @@ footer {
 		right: 20px;
 		display: block;
 		margin-left: 2.3rem;
+	  }
+
+
+
+
+	  /* book section */
+	  .grid {
+		display: flex;
+		flex-direction: column;
+		/* grid-template-columns: repeat(5, 1fr);
+		grid-gap: 20px; */
+	  }
+
+	  /* typeOfRooms section */
+	  .typeOfRooms{
+		display: flex;
+		flex-direction: column;
+		padding: 5vh 5vw;
+		gap: 2rem;
+		width: 100%;
+		justify-content: space-between;
+		border-bottom: 1px solid hsl(235, 19%, 35%);
+	  }
+	  .textsForRooms{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		gap: 3vh;
+		/* color: #fff; */
+		line-height: 1.5rem;
+	  }
+	  .typeOfRooms-img{
+		width: 100%;
+		object-fit: cover;
+	  }
+
+
+	  /* footer section */
+	  footer {
+		width: 100%;
+		background: #37371f;
+		color: #b6b7b9;
+		padding: 5vw 5vw;
 	  }
 }
