@@ -255,6 +255,13 @@ header {
         margin-left: 2.3rem;
         }
   
+
+        h1{
+          font-size: 24px;
+        }
+        h2{
+          font-size: 18px;
+        }
     
         main{
           width: 100%;  
