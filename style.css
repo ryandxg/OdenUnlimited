@@ -388,6 +388,10 @@
 	  }
 
 
+	  .home .text {
+		position: absolute;
+		top: 20%;
+	  }
 
 
 	  /* book section */
