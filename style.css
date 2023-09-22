@@ -215,6 +215,9 @@
 	background: #37371f;
 	color: #fff;
   }
+  .book input:nth-last-child(1):hover{
+	border:1px solid #fccb06;
+  }
   
 
   
@@ -391,6 +394,13 @@
 	  .home .text {
 		position: absolute;
 		top: 20%;
+	  }
+
+	  .home{
+		height: 90vh;
+	  }
+	  .home img {
+		height: 90vh;
 	  }
 
 
